@@ -1,0 +1,121 @@
+body {
+    background-color: #EEF9BF;
+    display: flex;
+    justify-content: center;
+}
+
+.interface {
+    width: 1110px;
+    height: 620px;
+}
+.cabecalho {
+    width: 1110px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.nomejogo {
+    width: 545px;
+    height: 63px;
+    margin-top: 40px;
+    color: #75B79E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 65.63px;
+}
+.primeirafileira {
+    width: 1110px;
+    height: 360px;
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.alinhar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.alinhado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 117px;
+    height: 146px;
+    position: relative;
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-bottom: 34px;
+  }
+
+  .face {
+    width: 100%;
+    height: 100%;
+    background-color: #A7E9AF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+    color: black;
+  }
+  .back-face {
+    transform: rotateY(180deg);
+  }
+
+  .front {
+    transform: rotateY(-180deg);
+  }
+
+  .back {
+    transform: rotateY(0deg);
+  }
+  .some {
+    display: none;
+  }
+  .frente {
+    width: 100px;
+    height: 100px;
+  }
+
+  @media (max-width: 336px) {
+
+    .interface, .cabecalho, .primeirafileira {
+      width: 100%;
+    }
+    .alinhar {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .card {
+      margin-bottom: 34px;
+    }
+    .cabecalho{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nomejogo {
+      width: 312px;
+      height: 110px;
+      margin-top: 40px;
+      color: #75B79E;
+      font-family: 'Roboto', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 42.19px;
+      text-align: center;
+    }
+
+  }
+  
