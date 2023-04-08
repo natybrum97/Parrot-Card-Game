@@ -72,15 +72,12 @@ body {
     transform: rotateY(180deg);
   }
 
-  .front {
+  .selecionado > .front {
     transform: rotateY(-180deg);
   }
 
-  .back {
+  .selecionado> .back-face {
     transform: rotateY(0deg);
-  }
-  .some {
-    display: none;
   }
   .frente {
     width: 100px;
