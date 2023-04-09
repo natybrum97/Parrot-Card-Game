@@ -124,6 +124,14 @@ body {
       justify-content: center;
       align-items: center;
     }
+    .cabecalho {
+      position: relative;
+    }
+    .cronometro{
+      position:absolute;
+      top: 2px;
+      right: 20px;
+    }
     .nomejogo {
       width: 312px;
       height: 110px;
