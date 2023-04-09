@@ -106,7 +106,7 @@ body {
     line-height: 42.19px;
     text-align: center;
 }
-  @media (max-width: 336px) {
+  @media (max-width: 614px) {
 
     .interface, .cabecalho, .primeirafileira {
       width: 100%;
