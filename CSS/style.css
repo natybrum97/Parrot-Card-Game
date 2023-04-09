@@ -13,6 +13,8 @@ body {
     height: 150px;
     display: flex;
     justify-content: center;
+
+    position: relative;
 }
 .nomejogo {
     width: 545px;
@@ -83,7 +85,27 @@ body {
     width: 100px;
     height: 100px;
   }
+  .cronometro{
+    width: 50px;
+    height: 53px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
+    position:absolute;
+    top: 10 px;
+    right: 16px;
+  }
+  .contador{
+    width: 46px;
+    height: 47px;
+    color: #86BD8D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    text-align: center;
+}
   @media (max-width: 336px) {
 
     .interface, .cabecalho, .primeirafileira {

@@ -2,6 +2,17 @@ let numeroDeCartas = parseInt(prompt("Com quantas cartas você quer jogar? Aten�
 while (isNaN(numeroDeCartas) || numeroDeCartas < 4 || numeroDeCartas > 14 || numeroDeCartas % 2 !== 0) {
     numeroDeCartas = parseInt(prompt("Com quantas cartas você quer jogar? Atenção: Escolha somente números pares de 4 a 14."));
 }
+
+let contador1 = 0;
+const divContador = document.getElementById('contadorcerto');
+const intervalId = setInterval(time, 1000);
+
+function time() {
+  contador1++;
+  console.log(contador1);
+  divContador.textContent = `${contador1}`;
+}
+
 let cartasViradas = [];
 let i = 0;
 let contjogadas = 0;
@@ -44,7 +55,8 @@ function virarCarta(carta) {
     }
   }
   if(contpares === numeroDeCartas/2 ) {
-    alert("Você ganhou em " + contjogadas + " jogadas!")
+    alert("Você ganhou em " + contjogadas + " jogadas! A duração do jogo foi de " + contador1 + " segundos!.")
+    clearInterval(intervalId);
   }
 } 
 function cartasDif(array){
